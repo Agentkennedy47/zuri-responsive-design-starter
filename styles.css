@@ -70,6 +70,17 @@ div.hero-content-heading p {
     font-weight: 300;
 }
 
+@media only screen and (max-width: 768px){
+    div.hero-content-heading h3{
+        display: flex;
+    }
+    
+    div.hero-content-heading{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
 div.hero-content-btn {
     display: flex;
     justify-content: center;
@@ -104,6 +115,12 @@ div.background {
     position: relative;
 }
 
+@media only screen and (max-width: 768px){
+    div.background{
+        height: 50%;
+    }
+}
+
 div.background h4 {
     padding: 2rem;
     color: #555657;
@@ -121,13 +138,19 @@ div.background p {
 
 div.hero-background-pos {
     position: absolute;
-    right: 0px;
+    right: 10rem;
     left: 66%;
     background: #fff;
     width: 140px;
     height: 140px;
     border-radius: 50%;
     box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
+}
+
+@media only screen and (max-width: 768px){
+    div.hero-background-pos{
+        display: none;
+    }
 }
 
 div.snapshot-team {
@@ -161,6 +184,14 @@ div.snapshot-box {
 div.snapshot-box-content {
     display: flex;
     justify-content: space-between;
+}
+
+@media only screen and (max-width: 600px){
+    div.snapshot-box-content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 div.box1 {
